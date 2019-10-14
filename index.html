@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="calc">
+                <div class="calc_display">
+                    <input type="text" value="0" id="display" class="calc_display-input" placeholder="00000000000" disabled>
+                </div>
+                <div class="calc_buttons">
+                    <table class="calc_table">
+                        <tr class="calc_table-row">
+                            <td>
+                                <button type="button" class="btn clear_btn" id="ce">CE</button>
+                            </td>
+                            <td>
+                                <button type="button"class="btn clear_btn" id="c">C</button>
+                            </td>
+                            <td>
+                                <button value="Деление" type="button"class="btn operation">/</button>
+                            </td>
+                            <td>
+                                <button value="Умножение" type="button"class="btn operation">*</button>
+                            </td>
+                        </tr>
+                        <tr class="calc_table-row">
+                            <td>
+                                <button type="button" class="number btn">7</button>
+                            </td>
+                            <td>
+                                <button type="button"class="number btn">8</button>
+                            </td>
+                            <td>
+                                <button type="button"class="number btn">9</button>
+                            </td>
+                            <td>
+                                <button value="Вычитание" type="button"class="btn operation">-</button>
+                            </td>
+                        </tr>
+                        <tr class="calc_table-row">
+                            <td>
+                                <button type="button" class="number btn">4</button>
+                            </td>
+                            <td>
+                                <button type="button"class="number btn">5</button>
+                            </td>
+                            <td>
+                                <button type="button"class="number btn">6</button>
+                            </td>
+                            <td>
+                                <button value="Сложение" type="button"class="btn operation">+</button>
+                            </td>
+                        </tr>
+                        <tr class="calc_table-row">
+                            <td>
+                                <button type="button" class="number btn">1</button>
+                            </td>
+                            <td>
+                                <button type="button"class="number btn">2</button>
+                            </td>
+                            <td>
+                                <button type="button"class="number btn">3</button>
+                            </td>
+                            <td rowspan="2" class="rowspan">
+                                <button value="Результат" type="button"class="btn btn_rowspan operation" id="result">=</button>
+                            </td>
+                        </tr>
+                        <tr class="calc_table-row">
+                            <td colspan="2">
+                                <button type="button" class="btn btn_colspan number">0</button>
+                            </td>
+                            <td>
+                                <button type="button"class="btn" id="desimal">.</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="desc">
+                <div class="text">
+                    <h1 class="title">Калькулятор</h1>
+                </div>
+                <div class="desc_button">
+                    <button type="button" class="desc_btn" id="howWorkBtn">Как это работает?</button>
+                </div>
+                <div class="list">
+                    <ul class="items" id="opertion_list">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>

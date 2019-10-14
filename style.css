@@ -1,0 +1,88 @@
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    background-color: #0C9CF0;
+    background-size: cover;
+    position: relative;
+}
+.container {
+    padding-left: 100px;
+    padding-top: 100px;
+    display: flex;
+}
+.calc {
+    width: 500px;
+    height: 630px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    border-radius: 6%;
+    margin: 0;
+}
+.calc_display {
+    padding: 67px 40px;
+}
+.calc_display-input {
+    font-size:56px;
+    width: 85%;
+    padding: 15px 27px;
+    background-color: #000000;
+    color: gray;
+    font-family: monospace;
+    border-radius: 13px;
+}
+.calc_buttons {
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    height: 50px;
+    width: 90px;
+    font-size: 25px;
+    margin: 6px 6px;
+    padding: 0;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color:#0C9CF0;
+    color: #fff;
+}
+.btn:focus {
+    border:2px solid #0C9CF0;
+}
+.rowspan {
+    height: 100%;
+}
+.btn_rowspan {
+    height: 90%;
+}
+.btn_colspan  {
+    width: 100%;
+}
+.desc {
+    margin-left: 50px;
+}
+.title {
+    color: #fff;
+    font-size: 56px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+.desc_button {
+    padding-top: 50px;
+}
+.desc_btn {
+    padding: 15px 50px;
+    cursor: pointer;
+    font-size: 25px;
+    background-color: white;
+    border-radius: 25px;
+    color: #0C9CF0;
+}
+.desc_btn:hover {
+    color: #fff;
+    background-color: #FF00BF;
+}
+.items {
+    color:#fff;
+    font-size: 26px;
+}
