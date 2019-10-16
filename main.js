@@ -53,6 +53,7 @@ function numberPress(number) {
     };
 };//нажатие кнопок клавиатуры
 
+
 function operation(op) {
     var localOperationMemory = Display.value;
     if (MemoryNewNumber && MemoryCurrentNumber !== '=') {
@@ -77,6 +78,10 @@ function operation(op) {
     };
     Display.value = MemoryCurrentNumber;
     MemoryPendingOperation = op;
+
+    if (localOperationMemory == 0) {
+        Display.value ='Error';
+    }
 };//операции типа сложения, вычитания и т.д.
 
 function desimal() {
